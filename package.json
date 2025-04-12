@@ -9,7 +9,7 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
-    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 strapi start",  // Updated start script
+    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 strapi start",  
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
     "upgrade:dry": "npx @strapi/upgrade latest --dry"
