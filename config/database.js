@@ -6,13 +6,13 @@ module.exports = ({ env }) => {
   const connections = {
     postgres: {
       connection: {
-        connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'localhost'),
+        connectionString: env('DATABASE_URL', 'postgresql://resume_builder_db_gocp_user:jThDI5U2zGAoSHEH0VeXU9vxnq8Hoi1J@dpg-cvsetbeuk2gs739tv45g-a:5432/resume_builder_db_goop'),
+        host: env('DATABASE_HOST', 'dpg-cvsetbeuk2gs739tv45g-a'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'strapi'),
-        user: env('DATABASE_USERNAME', 'rushikeshreddy'),
-        password: env('DATABASE_PASSWORD', 'Rushikesh@9124'),
-        ssl: env.bool('DATABASE_SSL', false) && {
+        database: env('DATABASE_NAME', 'resume_builder_db_goop'),
+        user: env('DATABASE_USERNAME', 'resume_builder_db_gocp_user'),
+        password: env('DATABASE_PASSWORD', 'jThDI5U2zGAoSHEH0VeXU9vxnq8Hoi1J'),
+        ssl: env.bool('DATABASE_SSL', true) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
           ca: env('DATABASE_SSL_CA', undefined),
